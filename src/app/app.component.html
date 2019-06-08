@@ -1,21 +1,99 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="btn-group btn-link btnz">
+    <a href='#about' class='top-btn'>ABOUT</a>
+    <a href='#projects' class='top-btn'>PROJECTS</a>
+    <a href='#contact' class='top-btn'>CONTACT</a>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+<div class="clr-row clr-align-items-center" style='margin-top: 15%'>
+    <!--<div class="clr-col-3 night" id="lightSwitch" style="margin-top: 15%; margin-left: 5%">-->
+    <div class="clr-col-3 clr-offset-1" id="lightSwitch" id='about'>
+        <h1 class='greet night'>Hi,</h1>
+        <h1 class='greet night'>I'm Jeremy.</h1>
+        <p class='greet-msg night'>I'm a web developer. Check out my cool projects or maybe just take my word on it.</p>
+    </div>
+    
+    <!--<div class="clr-col-2 clr-offset-6 mainfont" style="margin-top: 18%; padding: 10px">-->
+    <div class="clr-col-2 clr-offset-6">
+        <button class="btn" id="switch" (click)='switchLight()'>Light Mode</button>
+    </div>
+</div> 
+
+<div class="clr-row" style='margin-top: 15%; text-align: center; padding: 30px' id='projects'>
+    <h1 class='clr-col-12 night' style='text-align: center; font-weight: bold'>PROJECTS</h1>
+    <div class="clr-col-lg-4 clr-col-12">
+        <div class="card">
+            <div class="card-img">
+                <img src="assets/jk-e.png">
+            </div>
+            <div class="card-block">
+                <h3 class="card-title">project 1</h3>
+                <p class="card-text">
+                    Here is something about project 1 that impresses you
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href='www.google.com' class="btn btn-sm btn-link">Action 1</a>
+            </div>
+        </div>
+    </div>
+    <div class="clr-col-lg-4 clr-col-12">
+        <div class="card">
+            <div class="card-img">
+                <img src="assets/jk-e.png">
+            </div>
+            <div class="card-block">
+                <h3 class="card-title">project 2</h3>
+                <p class="card-text">
+                    Here is something about project 2 that humors you
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href='www.google.com' class="btn btn-sm btn-link">Action 2</a>
+            </div>
+        </div>
+    </div>
+    <div class="clr-col-lg-4 clr-col-12">
+        <div class="card">
+            <div class="card-img">
+                <img src="assets/jk-e.png">
+            </div>
+            <div class="card-block">
+                <h3 class="card-title">project 3</h3>
+                <p class="card-text">
+                    Here is something about project 3 that teaches you
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href='www.google.com' class="btn btn-sm btn-link">Action 3</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class='row' style='margin-top: 15%; text-align: center; padding: 30px' id='contact'>
+    <form>
+        <h1 class='night' style='padding: 30px; font-weight: bold'>CONTACT</h1>
+        <div style='padding: 10px'>
+            <label class='clr-control-label' style='padding: 10px'>NAME</label>
+            <input class='clr-input' style='text-align: center; font-size: 18px' size='30'>
+        </div>
+        <div style='padding: 10px'>
+            <label class='clr-control-label' style='padding: 10px'>EMAIL</label>
+            <input class='clr-input' style='text-align: center; font-size: 18px' size='30'>
+        </div>
+        <div style='padding: 10px'>
+            <label class='clr-control-label' style='padding: 10px'>MESSAGE</label>
+            <textarea class='clr-textarea' style='text-align: center; width: 350px; height: 150px; font-size: 18px' size='30'></textarea>
+        </div>
+    </form>
+</div>
+
+<div class="row" style="padding: 10px">
+    <div class="clr-col-12" style="margin-top: 15%">
+        <p>© 2019 Jeremy Kim, Inc.</p>
+    </div>
+</div>
 
 <router-outlet></router-outlet>

@@ -1,0 +1,52 @@
+.mainfont {
+    font-family: 'Special Elite', cursive;
+}
+
+.btnz {
+    display: flex; 
+    justify-content: center; 
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index: 1;
+}
+
+.top-btn {
+    color: white;
+    background-color: #32ddda;
+    opacity: 0.95;
+    padding: 0px 40px;
+    font-size: 14px;
+}
+
+.greet {
+    font-family: 'Special Elite', cursive;
+    font-size: 60px;
+}
+
+.greet-msg {
+    font-family: 'Special Elite', cursive;
+    font-size: 24px;
+}
+
+.night {
+    color: white;
+    background-color: black;
+}
+
+.light {
+    color: black;
+    background-color: white;
+}
+
+#switch {
+    font-size: 14px;
+    color: white;
+    background-color: #32ddda;
+}
+
+.clr-textarea { 
+    background: black;
+    color: white;
+}
