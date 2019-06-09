@@ -7,17 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  constructor() {}
+  constructor() {
+  }
   title = 'pfolio';
 
 switchLight() {
-  const topButtons = document.getElementsByClassName('top-btn');
-  const switchButton = document.querySelector('#switch');
+  const topButtons = document.getElementsByClassName('top-btn') as HTMLCollectionOf<HTMLElement>;
+  const switchButton = document.querySelector('#switch') as HTMLElement;
   const light = document.getElementsByClassName('night');
-  const text = switchButton.textContent;
-  const textArea = document.querySelector('.clr-textarea');
+  const text = document.querySelector('#switch').textContent;
+  const textArea = document.querySelector('.clr-textarea') as HTMLElement;
   console.log('bang');
-  console.log(textArea)
 
   for (let i = 0; i < light.length; i++) {
       light[i].classList.toggle('light');
@@ -25,8 +25,9 @@ switchLight() {
   }
 
   if (text === 'Light Mode') {
+      console.log('switchButton: ', switchButton, 'switchButton.style: ', switchButton.style)
       switchButton.textContent = 'Dark Mode';
-      document.querySelector('#switch').style.backgroundColor = '#7f8aff';
+      switchButton.style.backgroundColor = '#7f8aff';
       window.document.body.style.backgroundColor = 'white';
       textArea.style.background = 'white';
       textArea.style.color = 'black';
