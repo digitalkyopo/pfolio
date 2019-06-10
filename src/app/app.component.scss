@@ -3,8 +3,8 @@
 }
 
 .btnz {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -46,7 +46,12 @@
     background-color: #32ddda;
 }
 
-.clr-textarea { 
-    background: black;
+.clr-textarea {
+    background: #000000;
     color: white;
+}
+
+.project-p {
+  font-size: 18px;
+  padding: 30px;
 }
