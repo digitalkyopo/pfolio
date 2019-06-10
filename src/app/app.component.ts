@@ -25,7 +25,6 @@ switchLight() {
   }
 
   if (text === 'Light Mode') {
-      console.log('switchButton: ', switchButton, 'switchButton.style: ', switchButton.style)
       switchButton.textContent = 'Dark Mode';
       switchButton.style.backgroundColor = '#7f8aff';
       window.document.body.style.backgroundColor = 'white';

@@ -1,80 +1,64 @@
 <div class="btn-group btn-link btnz">
-    <a href='#about' class='top-btn'>ABOUT</a>
+    <a href='#lightswitch' class='top-btn'>ABOUT</a>
     <a href='#projects' class='top-btn'>PROJECTS</a>
     <a href='#contact' class='top-btn'>CONTACT</a>
 </div>
 
 
 <div class="clr-row clr-align-items-center" style='margin-top: 15%'>
-    <!--<div class="clr-col-3 night" id="lightSwitch" style="margin-top: 15%; margin-left: 5%">-->
+    <div class="clr-col-4 clr-offset-1" id="lightswitch">
+        <h1 class='greet night'>Hi,</h1>
+        <h1 class='greet night'>I'm Jeremy.</h1>
+        <p class='greet-msg night'>I'm a web developer. Check out my cool projects or maybe just take my word on it.</p>
+    </div>
+
+    <div class="clr-col-1 clr-offset-5">
+        <button class="btn" id="switch" (click)='switchLight()'>Light Mode</button>
+    </div>
+    <!--
     <div class="clr-col-3 clr-offset-1" id="lightSwitch" id='about'>
         <h1 class='greet night'>Hi,</h1>
         <h1 class='greet night'>I'm Jeremy.</h1>
         <p class='greet-msg night'>I'm a web developer. Check out my cool projects or maybe just take my word on it.</p>
     </div>
-    
-    <!--<div class="clr-col-2 clr-offset-6 mainfont" style="margin-top: 18%; padding: 10px">-->
-    <div class="clr-col-2 clr-offset-6">
+
+    <div class="clr-col-1 clr-offset-6">
         <button class="btn" id="switch" (click)='switchLight()'>Light Mode</button>
     </div>
-</div> 
-
-<div class="clr-row" style='margin-top: 15%; text-align: center; padding: 30px' id='projects'>
-    <h1 class='clr-col-12 night' style='text-align: center; font-weight: bold'>PROJECTS</h1>
-    <div class="clr-col-lg-4 clr-col-12">
-        <div class="card">
-            <div class="card-img">
-                <img src="assets/jk-e.png">
-            </div>
-            <div class="card-block">
-                <h3 class="card-title">project 1</h3>
-                <p class="card-text">
-                    Here is something about project 1 that impresses you
-                </p>
-            </div>
-            <div class="card-footer">
-                <a href='www.google.com' class="btn btn-sm btn-link">Action 1</a>
-            </div>
-        </div>
-    </div>
-    <div class="clr-col-lg-4 clr-col-12">
-        <div class="card">
-            <div class="card-img">
-                <img src="assets/jk-e.png">
-            </div>
-            <div class="card-block">
-                <h3 class="card-title">project 2</h3>
-                <p class="card-text">
-                    Here is something about project 2 that humors you
-                </p>
-            </div>
-            <div class="card-footer">
-                <a href='www.google.com' class="btn btn-sm btn-link">Action 2</a>
-            </div>
-        </div>
-    </div>
-    <div class="clr-col-lg-4 clr-col-12">
-        <div class="card">
-            <div class="card-img">
-                <img src="assets/jk-e.png">
-            </div>
-            <div class="card-block">
-                <h3 class="card-title">project 3</h3>
-                <p class="card-text">
-                    Here is something about project 3 that teaches you
-                </p>
-            </div>
-            <div class="card-footer">
-                <a href='www.google.com' class="btn btn-sm btn-link">Action 3</a>
-            </div>
-        </div>
-    </div>
+    -->
 </div>
 
+<div class="clr-row clr-justify-content-center" style="margin-top: 15%; padding: 30px" id='projects'>
+    <h1 class='clr-col-12 night' style='text-align: center; font-weight: bold'>PROJECTS</h1>
+</div>
 
-<div class='row' style='margin-top: 15%; text-align: center; padding: 30px' id='contact'>
+<div class="clr-row clr-justify-content-center">
+  <p class="clr-col-4 clr-align-self-center">This one's an app that might blow ya wig back</p>
+  <div class="clr-col-4 card clickable">
+      <div class="card-header">
+          Header
+      </div>
+      <div class="card-block">
+          <div class="card-title">
+              Block
+          </div>
+          <div class="card-text">
+              ...
+          </div>
+      </div>
+      <div class="card-footer">
+          <button class="btn btn-sm btn-link">Footer Action 1</button>
+          <button class="btn btn-sm btn-link">Footer Action 2</button>
+      </div>
+  </div>
+</div>
+
+<div class="clr-row clr-justify-content-center" style="margin-top: 15%; padding: 30px" id="contact">
+    <h1 class='night' style='padding: 30px; font-weight: bold'>CONTACT</h1>
+</div>
+
+<div class='clr-row clr-justify-content-center'>
     <form>
-        <h1 class='night' style='padding: 30px; font-weight: bold'>CONTACT</h1>
         <div style='padding: 10px'>
             <label class='clr-control-label' style='padding: 10px'>NAME</label>
             <input class='clr-input' style='text-align: center; font-size: 18px' size='30'>
