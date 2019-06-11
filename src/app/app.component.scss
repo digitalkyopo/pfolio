@@ -17,7 +17,13 @@
     background-color: #32ddda;
     opacity: 0.95;
     padding: 0px 40px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow:
+      -.1px -.1px 0 #000,
+      .1px -.1px 0 #000,
+      -.1px .1px 0 #000,
+      .1px .1px 0 #000;
 }
 
 .greet {
@@ -41,15 +47,22 @@
 }
 
 #switch {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
     color: white;
     background-color: #32ddda;
+    text-shadow:
+      -.1px -.1px 0 #000,
+      .1px -.1px 0 #000,
+      -.1px .1px 0 #000,
+      .1px .1px 0 #000;
 }
 
 .clr-textarea {
     background: #000000;
     color: white;
 }
+
 
 .project-p {
   font-size: 18px;
