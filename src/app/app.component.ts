@@ -16,6 +16,7 @@ switchLight() {
   const switchButton = document.querySelector('#switch') as HTMLElement;
   const light = document.getElementsByClassName('night');
   const text = document.querySelector('#switch').textContent;
+  const card = document.getElementsByClassName('card') as HTMLCollectionOf<HTMLElement>;
   const textArea = document.querySelector('.clr-textarea') as HTMLElement;
   console.log('bang');
 
@@ -33,6 +34,9 @@ switchLight() {
       for (let i = 0; i < topButtons.length; i++) {
         topButtons[i].style.backgroundColor = '#7f8aff';
       }
+      for (let i = 0; i < card.length; i++) {
+        card[i].style.backgroundColor = '#b2c1ff';
+      }
     } else {
       switchButton.textContent = 'Light Mode';
       switchButton.style.backgroundColor = '#32ddda';
@@ -41,6 +45,9 @@ switchLight() {
       textArea.style.color = 'white';
       for (let i = 0; i < topButtons.length; i++) {
         topButtons[i].style.backgroundColor = '#32ddda';
+      }
+      for (let i = 0; i < card.length; i++) {
+        card[i].style.backgroundColor = '#22343c';
       }
     }
 
