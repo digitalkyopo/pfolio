@@ -9,21 +9,43 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
+    height: 4em;
     z-index: 1;
 }
 
 .top-btn {
     color: white;
-    background-color: #32ddda;
-    opacity: 0.95;
+    //background-color: #32ddda;
+    //opacity: 0.95;
     padding: 0px 40px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    text-shadow:
-      -.1px -.1px 0 #000,
-      .1px -.1px 0 #000,
-      -.1px .1px 0 #000,
-      .1px .1px 0 #000;
+    margin-top: auto;
+    margin-bottom: auto;
+    //text-shadow:
+    //  -.1px -.1px 0 #000,
+    //  .1px -.1px 0 #000,
+    //  -.1px .1px 0 #000,
+    //  .1px .1px 0 #000;
+}
+
+.glow {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #32ddda, 0 0 20px #32ddda, 0 0 25px #32ddda;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #7f8aff, 0 0 15px #7f8aff, 0 0 20px #7f8aff, 0 0 25px #7f8aff;
+  }
 }
 
 .greet {

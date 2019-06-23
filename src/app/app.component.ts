@@ -32,9 +32,11 @@ export class AppComponent {
         textArea.style.background = 'white';
         textArea.style.color = 'black';
 
+        /*
         for (let i = 0; i < topButtons.length; i++) {
           topButtons[i].style.backgroundColor = '#7f8aff';
         }
+        */
 
         for (let i = 0; i < card.length; i++) {
           card[i].style.backgroundColor = '#b2c1ff';
@@ -46,9 +48,12 @@ export class AppComponent {
         textArea.style.background = 'black';
         textArea.style.color = 'white';
 
+        /*
         for (let i = 0; i < topButtons.length; i++) {
             topButtons[i].style.backgroundColor = '#32ddda';
         }
+        */
+
         for (let i = 0; i < card.length; i++) {
             card[i].style.backgroundColor = '#22343c';
         }
