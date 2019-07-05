@@ -101,3 +101,36 @@
       -.1px .1px 0 #000,
       .1px .1px 0 #000;
 }
+
+.card-img {
+  padding-top: 1em;
+}
+
+.titles {
+  color: white;
+}
+
+.contactBtn {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-appearance: none!important;
+  border: 1px solid;
+  min-width: 3rem;
+  max-width: 15rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 1.5rem;
+  letter-spacing: .12em;
+  font-size: .5rem;
+  font-weight: 500;
+  height: 1.5rem;
+  padding: 0 .5rem;
+  border-color: #49afd9;
+  background-color: #bababa;
+  margin-left: auto;
+  margin-right: auto;
+}

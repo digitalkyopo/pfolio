@@ -15,17 +15,6 @@
     <div class="clr-col-1 clr-offset-5">
         <button class="btn" id="switch" (click)='switchLight()'>Light Mode</button>
     </div>
-    <!--
-    <div class="clr-col-3 clr-offset-1" id="lightSwitch" id='about'>
-        <h1 class='greet night'>Hi,</h1>
-        <h1 class='greet night'>I'm Jeremy.</h1>
-        <p class='greet-msg night'>I'm a web developer. Check out my cool projects or maybe just take my word on it.</p>
-    </div>
-
-    <div class="clr-col-1 clr-offset-6">
-        <button class="btn" id="switch" (click)='switchLight()'>Light Mode</button>
-    </div>
-    -->
 </div>
 
 <div class="clr-row clr-justify-content-center" style="margin-top: 15%; padding: 30px" id='projects'>
@@ -33,11 +22,11 @@
 </div>
 
 <div class="clr-row clr-justify-content-center" style="padding: 4em">
-  <p class="clr-col-4 clr-align-self-center project-p">This one's an app that might make ya butt crack</p>
-  <div class="clr-col-3 card clickable">
-      <div class="card-header">
-          InTransition (NVTSI: Operation Reboot)
-      </div>
+  <div class="clr-col-4 clr-align-self-center project-p">
+    <h2 class="titles">InTransition (NVTSI: Operation Reboot)</h2>
+    <p>This one's an app that might make ya butt crack</p>
+  </div>
+  <div class="clr-col-3 card">
       <div class="card-img">
         <img src="./assets/reboot2.png">
       </div>
@@ -49,11 +38,11 @@
 </div>
 
 <div class="clr-row clr-justify-content-center" style="padding: 4em">
-  <p class="clr-col-4 clr-align-self-center project-p">This one's an app that might blow ya wig back</p>
-  <div class="clr-col-2 card clickable">
-      <div class="card-header">
-          Talkman App
-      </div>
+  <div class="clr-col-4 clr-align-self-center project-p">
+    <h2 class="titles">Talkman App</h2>
+    <p>This one's an app that might make ya butt crack</p>
+  </div>
+  <div class="clr-col-2 card">
       <div class="card-img">
           <img src="./assets/talkman1.png">
       </div>
@@ -65,11 +54,11 @@
 </div>
 
 <div class="clr-row clr-justify-content-center" style="padding: 4em">
-  <p class="clr-col-4 clr-align-self-center project-p">This one's an app that might make ya fingers snap</p>
-  <div class="clr-col-2 card clickable">
-      <div class="card-header">
-          The Breadcrumbs App
-      </div>
+  <div class="clr-col-4 clr-align-self-center project-p">
+    <h2 class="titles">The Breadcrumbs App</h2>
+    <p>This one's an app that might make ya butt crack</p>
+  </div>
+  <div class="clr-col-2 card">
       <div class="card-img">
         <img src="./assets/bc1.png">
       </div>
@@ -81,11 +70,11 @@
 </div>
 
 <div class="clr-row clr-justify-content-center" style="padding: 4em">
-  <p class="clr-col-4 clr-align-self-center project-p">This one's an app that might make ya butt crack</p>
-  <div class="clr-col-4 card clickable">
-      <div class="card-header">
-          YOLO Stock
-      </div>
+  <div class="clr-col-4 clr-align-self-center project-p">
+    <h2 class="titles">YOLO Stock</h2>
+    <p>This one's an app that might make ya butt crack</p>
+  </div>
+  <div class="clr-col-4 card">
       <div class="card-img">
         <img src="./assets/yolo2.png">
       </div>
@@ -114,7 +103,9 @@
             <label class='clr-control-label' style='padding: 10px'>MESSAGE</label>
             <textarea class='clr-textarea' style='text-align: center; width: 350px; height: 150px; font-size: 18px' size='30' name="message"></textarea>
         </div>
-        <input type="submit" value="Submit">
+        <div style="text-align: center">
+            <input class="contactBtn" type="submit" value="Submit">
+        </div>
     </form>
 </div>
 

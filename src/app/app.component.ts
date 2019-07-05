@@ -15,14 +15,13 @@ export class AppComponent {
     const topButtons = document.getElementsByClassName('top-btn') as HTMLCollectionOf<HTMLElement>;
     const switchButton = document.querySelector('#switch') as HTMLElement;
     const light = document.getElementsByClassName('night');
-    const text = document.querySelector('#switch').textContent;
+    const text = switchButton.textContent;
+    const titles = document.getElementsByClassName('titles') as HTMLCollectionOf<HTMLElement>;
     const card = document.getElementsByClassName('card') as HTMLCollectionOf<HTMLElement>;
     const textArea = document.querySelector('.clr-textarea') as HTMLElement;
-    console.log('bang');
 
     for (let i = 0; i < light.length; i++) {
         light[i].classList.toggle('light');
-        console.log('bang bang bang');
     }
 
     if (text === 'Light Mode') {
@@ -32,14 +31,16 @@ export class AppComponent {
         textArea.style.background = 'white';
         textArea.style.color = 'black';
 
-        /*
         for (let i = 0; i < topButtons.length; i++) {
-          topButtons[i].style.backgroundColor = '#7f8aff';
+          topButtons[i].style.color = 'black';
         }
-        */
+
+        for (let i = 0; i < titles.length; i++) {
+          titles[i].style.color = 'black';
+        }
 
         for (let i = 0; i < card.length; i++) {
-          card[i].style.backgroundColor = '#b2c1ff';
+          card[i].style.backgroundColor = '#e8eeff';
         }
     } else {
         switchButton.textContent = 'Light Mode';
@@ -48,11 +49,13 @@ export class AppComponent {
         textArea.style.background = 'black';
         textArea.style.color = 'white';
 
-        /*
         for (let i = 0; i < topButtons.length; i++) {
-            topButtons[i].style.backgroundColor = '#32ddda';
+            topButtons[i].style.color = 'white';
         }
-        */
+
+        for (let i = 0; i < titles.length; i++) {
+          titles[i].style.color = 'white';
+        }
 
         for (let i = 0; i < card.length; i++) {
             card[i].style.backgroundColor = '#22343c';
