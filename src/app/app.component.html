@@ -9,7 +9,7 @@
     <div class="clr-col-4 clr-offset-1">
         <h1 class='greet night'>Hi,</h1>
         <h1 class='greet night'>I'm Jeremy.</h1>
-        <p class='greet-msg night'>I'm a web developer. Check out my cool projects or maybe just take my word on it.</p>
+        <p class='greet-msg night'>I'm a web developer in San Diego, CA. Check out some of my cool projects here or send me a message.</p>
     </div>
 
     <div class="clr-col-1 clr-offset-5">
@@ -24,7 +24,11 @@
 <div class="clr-row clr-justify-content-center" style="padding: 4em">
   <div class="clr-col-4 clr-align-self-center project-p">
     <h2 class="titles">InTransition (NVTSI: Operation Reboot)</h2>
-    <p>This one's an app that might make ya butt crack</p>
+    <p class="night-text" [ngStyle]="{'color': night ? 'white' : 'black'}">
+      A mobile-app/web-app developed for the National Veterans Transition Services Inc's Operation Reboot
+      program. This was a team project done with my SSF cohort. It allows users to register themselves
+      and measure their transition progress as well as find resources and follow guidelines through the process.
+    </p>
   </div>
   <div class="clr-col-3 card">
       <div class="card-img">
@@ -40,7 +44,11 @@
 <div class="clr-row clr-justify-content-center" style="padding: 4em">
   <div class="clr-col-4 clr-align-self-center project-p">
     <h2 class="titles">Talkman App</h2>
-    <p>This one's an app that might make ya butt crack</p>
+    <p class="night-text" [ngStyle]="{'color': night ? 'white' : 'black'}">
+      A mobile app created with Ionic hybrid app framework. This app is a nod to Home Alone 2, where Kevin
+      used his Talkboy to fool others by recording phrases and playing them. Talkman allows the user to input
+      a phrase and play it at different speeds for a bit of fun.
+    </p>
   </div>
   <div class="clr-col-2 card">
       <div class="card-img">
@@ -54,9 +62,32 @@
 </div>
 
 <div class="clr-row clr-justify-content-center" style="padding: 4em">
+    <div class="clr-col-4 clr-align-self-center project-p">
+      <h2 class="titles">YOLO Stock</h2>
+      <p class="night-text" [ngStyle]="{'color': night ? 'white' : 'black'}">
+        A web app that allows users to search stocks and check their values. This app was made with Angular
+        framework and utilizes the Alpha Vantage API for the stock data.
+      </p>
+    </div>
+    <div class="clr-col-4 card">
+        <div class="card-img">
+          <img src="./assets/yolo2.png">
+        </div>
+        <div class="card-footer">
+            <a href="https://digitalkyopo.github.io/yolo-stock/login" class="btn btn-sm btn-link">see demo</a>
+            <a href="https://github.com/digitalkyopo/yolo-stock" class="btn btn-sm btn-link">github</a>
+        </div>
+    </div>
+  </div>
+
+<div class="clr-row clr-justify-content-center" style="padding: 4em">
   <div class="clr-col-4 clr-align-self-center project-p">
     <h2 class="titles">The Breadcrumbs App</h2>
-    <p>This one's an app that might make ya butt crack</p>
+    <p class="night-text" [ngStyle]="{'color': night ? 'white' : 'black'}">
+      A hybrid mobile app that locates your current position on a map and allows you to drop a "breadcrumb" pin on your
+      location. This was created using the Ionic framework and utilizes the Google Maps API for the map being
+      displayed.
+    </p>
   </div>
   <div class="clr-col-2 card">
       <div class="card-img">
@@ -65,22 +96,6 @@
       <div class="card-footer">
           <a href="https://the-breadcrumbs-app.herokuapp.com/" class="btn btn-sm btn-link">see demo</a>
           <a href="https://github.com/digitalkyopo/ionic-final-project" class="btn btn-sm btn-link">github</a>
-      </div>
-  </div>
-</div>
-
-<div class="clr-row clr-justify-content-center" style="padding: 4em">
-  <div class="clr-col-4 clr-align-self-center project-p">
-    <h2 class="titles">YOLO Stock</h2>
-    <p>This one's an app that might make ya butt crack</p>
-  </div>
-  <div class="clr-col-4 card">
-      <div class="card-img">
-        <img src="./assets/yolo2.png">
-      </div>
-      <div class="card-footer">
-          <a href="https://digitalkyopo.github.io/yolo-stock/login" class="btn btn-sm btn-link">see demo</a>
-          <a href="https://github.com/digitalkyopo/yolo-stock" class="btn btn-sm btn-link">github</a>
       </div>
   </div>
 </div>
@@ -104,7 +119,11 @@
             <textarea class='clr-textarea' style='text-align: center; width: 350px; height: 150px; font-size: 18px' size='30' name="message"></textarea>
         </div>
         <div style="text-align: center">
-            <input class="contactBtn" type="submit" value="Submit">
+            <input
+              class="contactBtn"
+              [ngStyle]="{'background-color': night ? '#32ddda' : '#7f8aff'}"
+              type="submit"
+              value="Submit">
         </div>
     </form>
 </div>

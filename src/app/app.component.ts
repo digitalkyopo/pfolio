@@ -5,13 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
+  night = true;
 
   constructor() {}
 
   title = 'pfolio';
 
   switchLight() {
+    this.night = !this.night;
+    console.log(this.night)
     const topButtons = document.getElementsByClassName('top-btn') as HTMLCollectionOf<HTMLElement>;
     const switchButton = document.querySelector('#switch') as HTMLElement;
     const light = document.getElementsByClassName('night');
