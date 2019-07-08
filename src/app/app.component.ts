@@ -15,7 +15,6 @@ export class AppComponent {
 
   switchLight() {
     this.night = !this.night;
-    console.log(this.night)
     const topButtons = document.getElementsByClassName('top-btn') as HTMLCollectionOf<HTMLElement>;
     const switchButton = document.querySelector('#switch') as HTMLElement;
     const light = document.getElementsByClassName('night');
